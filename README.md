@@ -42,39 +42,13 @@ This pipeline demonstrates modern stream processing with Confluent Cloud's manag
 - **⚡ Real-time Processing**: Event-time based enrichment
 - **🧼 Auto Cleanup**: Automated resource management
 - **🔧 Easy Setup**: Single command execution with `make all-in-one`
-- **📈 Monitoring**: Built-in success/failure indicators
-
-## 📁 Project Structure
-
-```
-pipeline/
-├── 📄 README.md              # Project documentation
-├── 🔧 Makefile              # Build automation
-├── ⚙️  .env                  # Configuration (create from template)
-├── 📝 .env.template         # Configuration template
-├── 📋 requirements.txt      # Python dependencies
-│
-├── 🏛️  Core Components
-│   ├── config.py            # Configuration management
-│   ├── run_pipeline.py      # Main orchestrator
-│   ├── producer.py          # AVRO event producer
-│   ├── consumer.py          # AVRO event consumer
-│   ├── flink_sql.py         # FlinkSQL deployment
-│   ├── topics.py            # Kafka topic management
-│   ├── register_schema_only.py # Schema registration
-│   ├── setup.py             # Environment setup
-│   └── cleanup.py           # Resource cleanup
-│
-└── 📂 sql/
-    └── 01_direct_insert.sql  # FlinkSQL enrichment logic
-```
+- **📈 Monitoring**: Built-in success/failure indicators 
 
 ## 🚀 Quick Start
 
 ### 1. Clone & Setup
 ```bash
-git clone <repository-url>
-cd pipeline
+git clone <repository-url> 
 ```
 
 ### 2. Configure Environment
